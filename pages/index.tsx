@@ -1,18 +1,21 @@
 import type { NextPage } from "next";
-import Typography from "../components/Typography";
-import Heading from "../components/Heading";
+import HeadingBlock from "../components/HeadingBlock";
 import NavBar from "../components/NavBar";
-import Content from "../components/Content";
+import HomeContent from "../components/HomeContent";
 
 const Home: NextPage = () => {
   return (
     <div>
       <NavBar></NavBar>
-      <Heading></Heading>
-      <Content></Content>
+      <HeadingBlock
+        isFirstHeadingBlock
+        headerText="Reuben GOETZ WYLLIE"
+        subheaderText="the best developer in existing!! hello world"
+      ></HeadingBlock>
+      <HomeContent></HomeContent>
+      <HeadingBlock headerText="SECOND HEADER"></HeadingBlock>
     </div>
   );
 };
 
 export default Home;
-``;
