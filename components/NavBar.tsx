@@ -3,17 +3,14 @@ const StyledNavBar = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  position: absolute;
+  position: fixed;
   width: 100%;
   background-color: white;
-  .sticky {
-    position: fixed;
-    top: 400px;
-    width: 100%;
-  }
+  height: 50px;
+  top: 0;
 `;
 
-const StyledNavTab = styled.div`
+const StyledNavTab = styled.a`
   height: 50px;
   width: 120px;
   text-align: center;
@@ -22,15 +19,13 @@ const StyledNavTab = styled.div`
   cursor: pointer;
 `;
 
-const styledNavContainer = styled.div``;
-
 const NavBar = () => {
   return (
     <StyledNavBar id="navbar">
-      <StyledNavTab className="nav-tab">Home</StyledNavTab>
-      <StyledNavTab className="nav-tab">Projects</StyledNavTab>
-      <StyledNavTab className="nav-tab">Nudes</StyledNavTab>
-      <StyledNavTab className="nav-tab">Hobbies</StyledNavTab>
+      <StyledNavTab href="/">Home</StyledNavTab>
+      <StyledNavTab href="/projects">Projects</StyledNavTab>
+      <StyledNavTab>Nudes</StyledNavTab>
+      <StyledNavTab>Hobbies</StyledNavTab>
     </StyledNavBar>
   );
 };
