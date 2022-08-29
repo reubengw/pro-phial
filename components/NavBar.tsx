@@ -2,26 +2,34 @@ import styled from "styled-components";
 const StyledNavBar = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   position: fixed;
+  padding-left: 10%;
   width: 100%;
-  background-color: white;
+  color: white;
+  font-size: 20px;
+  background-color: var(--primary-light);
   height: 50px;
   top: 0;
+  /* border-bottom: 3px solid var(--accent-light); */
 `;
 
 const StyledNavTab = styled.a`
-  height: 50px;
-  width: 120px;
+  height: 42px;
+  width: 110px;
+  margin: 0 25px;
   text-align: center;
-  line-height: 40px;
-  border: 5px solid #53091a;
+  line-height: 50px;
+  font-size: 25px;
   cursor: pointer;
+  :hover {
+    border-bottom: 3px solid var(--accent-light);
+  }
 `;
 
 const NavBar = () => {
   return (
     <StyledNavBar id="navbar">
+      <div></div>
       <StyledNavTab href="/">Home</StyledNavTab>
       <StyledNavTab href="/projects">Projects</StyledNavTab>
       <StyledNavTab>Nudes</StyledNavTab>

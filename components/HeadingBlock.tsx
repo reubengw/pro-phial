@@ -2,8 +2,8 @@ import styled, { css } from "styled-components";
 const StyledHeadingBlock = styled.div<
   Pick<HeadingBlockProps, "isFirstHeadingBlock">
 >`
-  color: #22223b;
-  background-color: #f2e9e4;
+  color: var(--accent-dark);
+  background-color: var(--primary-lighter);
   text-align: center;
   line-height: 100px;
   font-size: 50px;

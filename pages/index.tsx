@@ -9,8 +9,8 @@ const Home: NextPage = () => {
       <NavBar></NavBar>
       <HeadingBlock
         isFirstHeadingBlock
-        headerText="Reuben GOETZ WYLLIE"
-        subheaderText="the best developer in existing!! hello world"
+        headerText="HEADER TEXT"
+        subheaderText="SUBHEADER TEXT"
       ></HeadingBlock>
       <HomeContent></HomeContent>
       <HeadingBlock headerText="SECOND HEADER"></HeadingBlock>
